@@ -1,0 +1,1890 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Athemporal Sofa Collection | Sofás de diseño para mayoristas en Chile</title>
+  <meta name="description" content="Athemporal Sofa Collection: sofás de diseño contemporáneo, fabricación nacional y propuesta mayorista para importadores, tiendas, distribuidores y proyectos de interiorismo en Chile." />
+  <meta name="theme-color" content="#6b351f" />
+  <meta property="og:title" content="Athemporal Sofa Collection" />
+  <meta property="og:description" content="Sofás de diseño contemporáneo para mayoristas, tiendas, distribuidores y proyectos de interiorismo en Chile." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --paper: #ffffff;
+      --ink: #2b2926;
+      --muted: #716a64;
+      --soft: #eee7df;
+      --soft-2: #f5f0ea;
+      --brand: #6b351f;
+      --brand-2: #9a4e30;
+      --accent: #b8372a;
+      --gold: #c8a577;
+      --line: rgba(43, 41, 38, .12);
+      --shadow: 0 24px 70px rgba(43, 41, 38, .10);
+      --radius-xl: 28px;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --container: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% -5%, rgba(200,165,119,.20), transparent 28rem),
+        radial-gradient(circle at 90% 10%, rgba(154,78,48,.12), transparent 26rem),
+        var(--bg);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img, svg { max-width: 100%; display: block; }
+    button, input, select, textarea { font: inherit; }
+
+    .container {
+      width: min(100% - 40px, var(--container));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 16px;
+      background: var(--ink);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 999px;
+      z-index: 1000;
+    }
+    .skip-link:focus { top: 16px; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(251,250,247,.84);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 760;
+      letter-spacing: .02em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow: 0 12px 30px rgba(107,53,31,.22);
+      font-family: Georgia, serif;
+      font-size: 22px;
+    }
+
+    .brand span:last-child {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-links a {
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: var(--muted);
+      transition: .2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: var(--ink);
+      background: var(--soft-2);
+      outline: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      border-radius: 999px;
+      background: var(--paper);
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(43,41,38,.08);
+    }
+
+    .menu-btn span {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: var(--ink);
+      margin: 4px auto;
+      border-radius: 2px;
+      transition: .2s ease;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 44px;
+      border: 1px solid transparent;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      transition: .2s ease;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow: 0 16px 34px rgba(107,53,31,.20);
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 42px rgba(107,53,31,.26); }
+    .btn-secondary {
+      color: var(--ink);
+      background: var(--paper);
+      border-color: var(--line);
+    }
+    .btn-secondary:hover { transform: translateY(-2px); border-color: rgba(107,53,31,.28); box-shadow: 0 14px 34px rgba(43,41,38,.08); }
+    .btn-ghost {
+      background: rgba(255,255,255,.72);
+      border-color: var(--line);
+      color: var(--brand);
+    }
+
+    main { overflow: hidden; }
+
+    .hero {
+      position: relative;
+      padding: 80px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      align-items: center;
+      gap: 46px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 12px;
+      border: 1px solid rgba(107,53,31,.16);
+      border-radius: 999px;
+      color: var(--brand);
+      background: rgba(255,255,255,.65);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(184,55,42,.10);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      margin: 20px 0 18px;
+      font-size: clamp(42px, 7vw, 86px);
+      line-height: .92;
+      letter-spacing: -.06em;
+      font-weight: 850;
+    }
+
+    .serif {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      color: var(--brand);
+      letter-spacing: -.05em;
+    }
+
+    .lead {
+      max-width: 630px;
+      color: var(--muted);
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.45;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 660px;
+    }
+
+    .proof-card {
+      padding: 16px;
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,.72);
+      border: 1px solid var(--line);
+    }
+
+    .proof-card strong {
+      display: block;
+      color: var(--brand);
+      font-size: 21px;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .proof-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .catalog-card {
+      width: min(100%, 520px);
+      border-radius: 42px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.70)),
+        linear-gradient(135deg, rgba(200,165,119,.16), rgba(107,53,31,.08));
+      border: 1px solid rgba(255,255,255,.82);
+      box-shadow: var(--shadow);
+      padding: 34px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .catalog-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 180px;
+      height: 180px;
+      border-bottom-right-radius: 90px;
+      background: var(--brand);
+      opacity: .94;
+    }
+
+    .catalog-card-inner {
+      position: relative;
+      z-index: 1;
+      padding-top: 134px;
+      min-height: 470px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .brand-only-card {
+      min-height: 380px;
+      display: grid;
+      place-items: center;
+    }
+
+    .brand-only-inner {
+      width: 100%;
+      min-height: 320px;
+      padding-top: 0;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .brand-only-inner .catalog-sub {
+      margin-bottom: 0;
+    }
+
+    .hero-sofa {
+      position: absolute;
+      inset: 100px 20px auto 20px;
+      height: 230px;
+      border-radius: 36px 36px 22px 22px;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.55), transparent 24%, transparent 76%, rgba(255,255,255,.45)),
+        linear-gradient(135deg, #d8c9b8, #bda98f);
+      box-shadow: inset 0 -16px 30px rgba(77,45,25,.10), 0 26px 40px rgba(43,41,38,.10);
+    }
+
+    .hero-sofa::before,
+    .hero-sofa::after {
+      content: "";
+      position: absolute;
+      top: 42px;
+      width: 72px;
+      height: 150px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #d7c5b0, #bba68d);
+    }
+
+    .hero-sofa::before { left: -8px; }
+    .hero-sofa::after { right: -8px; }
+
+    .seat-line {
+      position: absolute;
+      left: 94px;
+      right: 94px;
+      bottom: 68px;
+      height: 2px;
+      background: rgba(107,53,31,.18);
+    }
+
+    .pillow {
+      position: absolute;
+      top: 42px;
+      width: 116px;
+      height: 92px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #efe5d8, #cab8a3);
+      box-shadow: 0 14px 22px rgba(43,41,38,.10);
+    }
+
+    .pillow.one { left: 126px; transform: rotate(-3deg); }
+    .pillow.two { right: 126px; transform: rotate(3deg); }
+
+    .catalog-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 5vw, 62px);
+      letter-spacing: -.07em;
+      color: var(--brand);
+      margin-bottom: 0;
+    }
+
+    .catalog-sub {
+      color: var(--muted);
+      letter-spacing: .48em;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 28px;
+    }
+
+    .floating-note {
+      position: absolute;
+      right: -14px;
+      top: 28px;
+      width: 174px;
+      padding: 16px;
+      border-radius: 22px;
+      background: var(--ink);
+      color: white;
+      box-shadow: 0 20px 46px rgba(43,41,38,.20);
+    }
+
+    .floating-note b {
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+      margin-bottom: 6px;
+      color: #fff5e8;
+    }
+
+    .floating-note span {
+      color: rgba(255,255,255,.74);
+      font-size: 12px;
+    }
+
+    section {
+      padding: 84px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 34px;
+    }
+
+    .section-head.center {
+      display: block;
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 40px;
+    }
+
+    .section-kicker {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4.7vw, 58px);
+      line-height: .98;
+      letter-spacing: -.05em;
+      margin-bottom: 14px;
+    }
+
+    .section-head p,
+    .section-head.center p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 670px;
+      margin-bottom: 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .identity-panel {
+      min-height: 460px;
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.74), rgba(255,255,255,.55)),
+        linear-gradient(135deg, rgba(107,53,31,.16), rgba(200,165,119,.20));
+      border: 1px solid rgba(255,255,255,.84);
+      box-shadow: var(--shadow);
+      padding: 34px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .identity-panel::after {
+      content: "";
+      position: absolute;
+      inset: auto -120px -120px auto;
+      width: 310px;
+      height: 310px;
+      border-radius: 50%;
+      background: rgba(107,53,31,.12);
+    }
+
+    .quote-mark {
+      font-family: Georgia, serif;
+      font-size: 98px;
+      line-height: .8;
+      color: rgba(107,53,31,.26);
+    }
+
+    .founder {
+      position: absolute;
+      left: 34px;
+      bottom: 34px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .founder strong { display: block; color: var(--ink); font-size: 17px; }
+
+    .identity-copy {
+      display: grid;
+      gap: 16px;
+    }
+
+    .feature-card {
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,.78);
+      border: 1px solid var(--line);
+      transition: .2s ease;
+    }
+
+    .feature-card:hover { transform: translateY(-3px); box-shadow: 0 18px 46px rgba(43,41,38,.08); }
+
+    .feature-card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      letter-spacing: -.02em;
+    }
+
+    .feature-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .value-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: 0 12px 32px rgba(43,41,38,.05);
+    }
+
+    .value-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      border-radius: 14px;
+      background: var(--soft-2);
+      color: var(--brand);
+      font-weight: 900;
+      font-family: Georgia, serif;
+      font-size: 20px;
+    }
+
+    .value-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .value-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .audience {
+      border-radius: 34px;
+      background: var(--ink);
+      color: white;
+      padding: 42px;
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 34px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .audience::before {
+      content: "";
+      position: absolute;
+      inset: -160px -160px auto auto;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: rgba(200,165,119,.12);
+    }
+
+    .audience h2 { color: white; }
+    .audience p { color: rgba(255,255,255,.72); }
+
+    .audience-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      position: relative;
+    }
+
+    .audience-item {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+
+    .audience-item strong { display: block; color: #fff4e7; margin-bottom: 4px; }
+    .audience-item span { color: rgba(255,255,255,.66); font-size: 14px; }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.7);
+      color: var(--muted);
+      padding: 12px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 800;
+      transition: .2s ease;
+    }
+
+    .tab[aria-selected="true"] {
+      background: var(--brand);
+      color: white;
+      border-color: var(--brand);
+      box-shadow: 0 16px 34px rgba(107,53,31,.18);
+    }
+
+    .product-panel {
+      display: none;
+      background: rgba(255,255,255,.78);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .product-panel.active { display: block; }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      min-height: 560px;
+    }
+
+    .product-art {
+      padding: 32px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.3), rgba(245,240,234,.92)),
+        radial-gradient(circle at 35% 24%, rgba(200,165,119,.28), transparent 24rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .product-art-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 16px;
+    }
+
+    .product-photo-wrap {
+      width: min(100%, 470px);
+      min-height: 280px;
+      margin: 28px auto;
+      display: grid;
+      place-items: center;
+    }
+
+    .product-photo {
+      width: 100%;
+      height: auto;
+      max-height: 330px;
+      object-fit: contain;
+      border-radius: 22px;
+      filter: drop-shadow(0 24px 26px rgba(43, 41, 38, .12));
+    }
+
+    .product-label {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .product-label small {
+      color: var(--accent);
+      font-weight: 900;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .product-label strong {
+      font-size: 46px;
+      line-height: 1;
+      letter-spacing: -.05em;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      color: var(--brand);
+      border: 1px solid rgba(107,53,31,.14);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .sofa-illustration {
+      margin: 32px auto;
+      width: min(100%, 430px);
+      height: 230px;
+      position: relative;
+    }
+
+    .sofa-body {
+      position: absolute;
+      left: 36px;
+      right: 36px;
+      bottom: 38px;
+      height: 118px;
+      border-radius: 26px 26px 18px 18px;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.40), transparent 20%, transparent 80%, rgba(255,255,255,.35)),
+        linear-gradient(135deg, var(--fabric-1), var(--fabric-2));
+      box-shadow: inset 0 -16px 24px rgba(43,41,38,.08), 0 18px 26px rgba(43,41,38,.08);
+    }
+
+    .sofa-arm {
+      position: absolute;
+      bottom: 38px;
+      width: var(--arm-width);
+      height: var(--arm-height);
+      border-radius: var(--arm-radius);
+      background: linear-gradient(135deg, var(--fabric-1), var(--fabric-2));
+      box-shadow: inset 0 -10px 18px rgba(43,41,38,.06);
+    }
+
+    .sofa-arm.left { left: 12px; }
+    .sofa-arm.right { right: 12px; }
+
+    .sofa-cushion {
+      position: absolute;
+      bottom: 88px;
+      width: var(--cushion-width);
+      height: 80px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(255,255,255,.35), transparent), linear-gradient(135deg, var(--fabric-1), var(--fabric-2));
+      box-shadow: 0 12px 18px rgba(43,41,38,.08);
+    }
+
+    .sofa-cushion.one { left: 102px; }
+    .sofa-cushion.two { right: 102px; }
+
+    .sofa-leg {
+      position: absolute;
+      bottom: 16px;
+      width: 18px;
+      height: var(--leg-height);
+      border-radius: 4px;
+      background: var(--leg);
+    }
+
+    .sofa-leg.l1 { left: 88px; transform: skewX(-8deg); }
+    .sofa-leg.l2 { right: 88px; transform: skewX(8deg); }
+
+    .m101 {
+      --fabric-1: #dfcfb8;
+      --fabric-2: #bba48a;
+      --arm-width: 48px;
+      --arm-height: 118px;
+      --arm-radius: 20px;
+      --cushion-width: 110px;
+      --leg-height: 34px;
+      --leg: #4c3024;
+    }
+
+    .m102 {
+      --fabric-1: #a59687;
+      --fabric-2: #6f665d;
+      --arm-width: 68px;
+      --arm-height: 138px;
+      --arm-radius: 18px;
+      --cushion-width: 112px;
+      --leg-height: 58px;
+      --leg: #1f1f1f;
+    }
+
+    .m103 {
+      --fabric-1: #eee7db;
+      --fabric-2: #c8bcae;
+      --arm-width: 74px;
+      --arm-height: 136px;
+      --arm-radius: 22px;
+      --cushion-width: 116px;
+      --leg-height: 22px;
+      --leg: #9a6b3d;
+    }
+
+    .product-copy {
+      padding: clamp(28px, 5vw, 54px);
+    }
+
+    .product-copy h3 {
+      font-size: clamp(28px, 3.2vw, 44px);
+      line-height: 1;
+      letter-spacing: -.04em;
+      margin-bottom: 14px;
+    }
+
+    .product-copy > p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 24px;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+      margin: 22px 0;
+    }
+
+    .spec {
+      padding: 16px;
+      border-radius: 16px;
+      background: var(--soft-2);
+      border: 1px solid rgba(107,53,31,.08);
+    }
+
+    .spec strong { display: block; margin-bottom: 4px; font-size: 14px; }
+    .spec span { color: var(--muted); font-size: 13px; }
+
+    .table-wrap {
+      overflow: auto;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 560px;
+      font-size: 14px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      color: var(--brand);
+      background: var(--soft-2);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    details {
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.72);
+      overflow: hidden;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px 18px;
+      font-weight: 850;
+      color: var(--brand);
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      font-size: 20px;
+      line-height: 1;
+    }
+    details[open] summary::after { content: "–"; }
+
+    .details-body {
+      padding: 0 18px 18px;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .process-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process-card b {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: white;
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+
+    .process-card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .quality-band {
+      border-radius: 34px;
+      padding: 44px;
+      background:
+        linear-gradient(135deg, rgba(107,53,31,.94), rgba(43,41,38,.96)),
+        var(--brand);
+      color: white;
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .quality-band h2 { color: white; }
+    .quality-band p { color: rgba(255,255,255,.72); }
+
+    .quality-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .quality-item {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+
+    .check {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(200,165,119,.20);
+      color: #fff2df;
+      font-weight: 900;
+    }
+
+    .quality-item strong { display: block; margin-bottom: 3px; }
+    .quality-item span { color: rgba(255,255,255,.68); font-size: 14px; }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+    }
+
+    .faq-grid details { margin: 0; }
+    .faq-grid .details-body { color: var(--muted); }
+
+    .contact-card {
+      border-radius: 36px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: .86fr 1.14fr;
+    }
+
+    .contact-aside {
+      padding: 42px;
+      color: white;
+      background:
+        linear-gradient(180deg, rgba(43,41,38,.18), rgba(43,41,38,.72)),
+        linear-gradient(135deg, #8f482c, #3b2a22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-aside::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.08);
+      right: -160px;
+      bottom: -150px;
+    }
+
+    .contact-aside h2 {
+      color: white;
+      margin-bottom: 14px;
+    }
+
+    .contact-aside p {
+      color: rgba(255,255,255,.75);
+    }
+
+    .contact-lines {
+      display: grid;
+      gap: 13px;
+      margin-top: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-line {
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 16px;
+      background: rgba(255,255,255,.08);
+    }
+
+    .contact-line strong {
+      display: block;
+      color: #fff1df;
+      margin-bottom: 4px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .contact-line span {
+      color: rgba(255,255,255,.72);
+    }
+
+    .contact-form {
+      padding: 42px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .field { display: grid; gap: 7px; }
+    .field.full { grid-column: 1 / -1; }
+
+    label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--soft-2);
+      padding: 13px 14px;
+      color: var(--ink);
+      transition: .2s ease;
+    }
+
+    textarea { min-height: 124px; resize: vertical; }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: rgba(107,53,31,.45);
+      background: white;
+      box-shadow: 0 0 0 4px rgba(107,53,31,.08);
+    }
+
+    .form-note {
+      grid-column: 1 / -1;
+      color: var(--muted);
+      font-size: 13px;
+      margin: 2px 0 0;
+    }
+
+    .site-footer {
+      padding: 36px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-links a:hover { color: var(--brand); }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .split,
+      .product-grid,
+      .quality-band,
+      .contact-card,
+      .audience {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual { min-height: 500px; }
+      .values-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .process-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .nav-links {
+        position: fixed;
+        left: 20px;
+        right: 20px;
+        top: 84px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        background: rgba(255,255,255,.96);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 12px;
+        box-shadow: var(--shadow);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 14px; }
+      .menu-btn { display: inline-block; }
+      .nav-actions .btn { display: none; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 12px; }
+    }
+
+    @media (max-width: 720px) {
+      .container { width: min(100% - 28px, var(--container)); }
+      .hero { padding-top: 52px; }
+      section { padding: 62px 0; }
+      .hero-proof,
+      .values-grid,
+      .audience-list,
+      .spec-grid,
+      .faq-grid,
+      .contact-form {
+        grid-template-columns: 1fr;
+      }
+      .contact-form { padding: 26px; }
+      .contact-aside { padding: 30px; }
+      .process-grid { grid-template-columns: 1fr; }
+      .catalog-card { padding: 22px; border-radius: 32px; }
+      .catalog-card-inner { min-height: 420px; }
+      .floating-note { position: static; width: auto; margin-top: 18px; }
+      .hero-sofa { inset: 98px 10px auto 10px; transform: scale(.88); }
+      .product-art { padding: 24px; }
+      .sofa-illustration { transform: scale(.86); transform-origin: center; margin: 12px auto; }
+      .product-photo-wrap { min-height: 220px; margin: 12px auto; }
+      .audience, .quality-band { padding: 28px; border-radius: 26px; }
+      .identity-panel { min-height: 380px; }
+      .btn { width: 100%; }
+      .hero-actions .btn { width: auto; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container nav" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Athemporal Sofa Collection">
+        <span class="brand-mark">A</span>
+        <span>Athemporal <span>Sofa Collection</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#identidad">Identidad</a>
+        <a href="#propuesta">Propuesta</a>
+        <a href="#coleccion">Colección</a>
+        <a href="#calidad">Calidad</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Diseño · Fabricación · Chile</span>
+          <h1>Sofás de diseño para negocios que buscan <span class="serif">calidad local</span>.</h1>
+          <p class="lead">Athemporal Sofa Collection une artesanía tradicional y diseño contemporáneo para ofrecer mobiliario de alta gama a importadores, tiendas, distribuidores y proyectos de interiorismo en Chile.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#coleccion">Ver colección</a>
+            <a class="btn btn-secondary" href="athemporal%20catalogo%20v7.pdf" download>Descargar catálogo</a>
+          </div>
+
+          <div class="hero-proof" aria-label="Diferenciales principales">
+            <div class="proof-card">
+              <strong>3</strong>
+              <span>líneas de sofás: M101, M102 y M103.</span>
+            </div>
+            <div class="proof-card">
+              <strong>B2B</strong>
+              <span>pensado para mayoristas y proyectos.</span>
+            </div>
+            <div class="proof-card">
+              <strong>+IVA</strong>
+              <span>condiciones comerciales por volumen.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="catalog-card brand-only-card">
+            <div class="catalog-card-inner brand-only-inner">
+              <div>
+                <p class="catalog-title">Athemporal</p>
+                <p class="catalog-sub">Sofa Collection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="identidad">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Nuestra identidad</p>
+            <h2>Una marca creada para trascender tendencias temporales.</h2>
+          </div>
+          <p>La identidad de Athemporal representa la unión entre la artesanía tradicional y el diseño contemporáneo, con piezas sobrias, versátiles y pensadas para el uso cotidiano.</p>
+        </div>
+
+        <div class="split">
+          <article class="identity-panel reveal">
+            <div class="quote-mark">“</div>
+            <h3>Diseño con permanencia, terminaciones cuidadas y valor comercial.</h3>
+            <p class="founder"><strong>Juan Antonio Peña</strong>Fundador</p>
+          </article>
+
+          <div class="identity-copy">
+            <article class="feature-card reveal">
+              <h3>Artesanía tradicional</h3>
+              <p>La propuesta se apoya en fabricación cuidada, estructura firme, tapizados funcionales y detalles que comunican estabilidad.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>Diseño contemporáneo</h3>
+              <p>Líneas limpias, proporciones equilibradas y acabados sobrios para integrarse en hogares, showrooms y proyectos de interiorismo.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>Enfoque comercial</h3>
+              <p>La colección fue pensada para quienes necesitan productos competitivos, consistentes y aptos para venta mayorista.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="propuesta">
+      <div class="container">
+        <div class="audience reveal">
+          <div>
+            <p class="section-kicker">Propuesta de valor</p>
+            <h2>El aliado local para reemplazar fricción logística por respuesta rápida.</h2>
+            <p>La visión de la marca es consolidarse como socio estratégico para importadores de mobiliario en Chile, ofreciendo seguridad, flexibilidad y capacidad de respuesta desde la fabricación nacional.</p>
+          </div>
+
+          <div class="audience-list">
+            <div class="audience-item">
+              <strong>Importadores</strong>
+              <span>Alternativa nacional para reducir complejidad del comercio exterior.</span>
+            </div>
+            <div class="audience-item">
+              <strong>Tiendas</strong>
+              <span>Modelos versátiles, actuales y fáciles de integrar en sala de ventas.</span>
+            </div>
+            <div class="audience-item">
+              <strong>Interioristas</strong>
+              <span>Estética sobria para proyectos residenciales y ambientes corporativos.</span>
+            </div>
+            <div class="audience-item">
+              <strong>Distribuidores</strong>
+              <span>Condiciones por volumen y una línea clara de productos.</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="height: 30px"></div>
+
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <div class="value-icon">1</div>
+            <h3>Seguridad</h3>
+            <p>Un aliado local reduce incertidumbres de disponibilidad, comunicación y reposición.</p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-icon">2</div>
+            <h3>Flexibilidad</h3>
+            <p>Modelos en varias configuraciones para distintos tickets, espacios y negocios.</p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-icon">3</div>
+            <h3>Calidad percibida</h3>
+            <p>Texturas, proporciones y terminaciones pensadas para una presentación cuidada.</p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-icon">4</div>
+            <h3>Valor comercial</h3>
+            <p>Precios de referencia por volumen para mayoristas y distribuidores.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="coleccion">
+      <div class="container">
+        <div class="section-head center">
+          <p class="section-kicker">Colección</p>
+          <h2>Tres modelos para distintos estilos de venta y ambientes.</h2>
+          <p>Selecciona una línea para revisar concepto, detalles de diseño, medidas disponibles y condiciones comerciales de referencia.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Modelos de sofá">
+          <button class="tab" role="tab" aria-selected="true" aria-controls="panel-m101" id="tab-m101" data-tab="m101">Sofá M101</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-m102" id="tab-m102" data-tab="m102">Sofá M102</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-m103" id="tab-m103" data-tab="m103">Sofá M103</button>
+        </div>
+
+        <article class="product-panel active" id="panel-m101" role="tabpanel" aria-labelledby="tab-m101">
+          <div class="product-grid">
+            <div class="product-art">
+              <div class="product-art-top">
+                <span class="product-label"><small>Ficha de producto</small><strong>M101</strong></span>
+                <span class="badge">Diseño ligero</span>
+              </div>
+              <figure class="product-photo-wrap">
+                <img class="product-photo" src="IMAGENS/M1O1.png" alt="Sofá M101" loading="lazy" />
+              </figure>
+              <p style="color: var(--muted); margin: 0;">Líneas simples, brazos delgados y proporciones equilibradas para integrarse con naturalidad en distintos estilos de interiorismo.</p>
+            </div>
+
+            <div class="product-copy">
+              <h3>Diseño contemporáneo, confort y funcionalidad en equilibrio.</h3>
+              <p>El M101 combina estética limpia con estructura pensada para el uso diario. Es ideal para renovar livings con una pieza cómoda, resistente y visualmente liviana.</p>
+
+              <div class="spec-grid">
+                <div class="spec"><strong>Brazos</strong><span>Delgados y estilizados.</span></div>
+                <div class="spec"><strong>Base</strong><span>Patas de madera de 10 cm.</span></div>
+                <div class="spec"><strong>Suspensión</strong><span>Resortes zigzag de acero.</span></div>
+                <div class="spec"><strong>Tapizado</strong><span>Poliéster texturado bicolor.</span></div>
+              </div>
+
+              <h4>Dimensiones disponibles</h4>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Configuración</th><th>Ancho</th><th>Alto total</th><th>Profundidad</th></tr></thead>
+                  <tbody>
+                    <tr><td>M-101-A</td><td>70 cm</td><td>75 cm</td><td>80 cm</td></tr>
+                    <tr><td>M-101-B</td><td>160 cm</td><td>75 cm</td><td>80 cm</td></tr>
+                    <tr><td>M-101-C</td><td>190 cm</td><td>75 cm</td><td>80 cm</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <details>
+                <summary>Ver precios mayoristas de referencia + IVA</summary>
+                <div class="details-body table-wrap">
+                  <table>
+                    <thead><tr><th>Modelo</th><th>Cantidad</th><th>Ancho</th><th>Prof.</th><th>Valor + IVA</th></tr></thead>
+                    <tbody>
+                      <tr><td>M-101-A</td><td>25 unidades</td><td>70</td><td>80</td><td>$140.000</td></tr>
+                      <tr><td>M-101-A</td><td>50 unidades</td><td>70</td><td>80</td><td>$115.000</td></tr>
+                      <tr><td>M-101-A</td><td>100 unidades</td><td>70</td><td>80</td><td>$95.000</td></tr>
+                      <tr><td>M-101-A</td><td>250 unidades</td><td>70</td><td>80</td><td>$75.000</td></tr>
+                      <tr><td>M-101-B</td><td>25 unidades</td><td>160</td><td>80</td><td>$200.000</td></tr>
+                      <tr><td>M-101-B</td><td>50 unidades</td><td>160</td><td>80</td><td>$175.000</td></tr>
+                      <tr><td>M-101-B</td><td>100 unidades</td><td>160</td><td>80</td><td>$150.000</td></tr>
+                      <tr><td>M-101-B</td><td>250 unidades</td><td>160</td><td>80</td><td>$130.000</td></tr>
+                      <tr><td>M-101-C</td><td>25 unidades</td><td>190</td><td>80</td><td>$235.000</td></tr>
+                      <tr><td>M-101-C</td><td>50 unidades</td><td>190</td><td>80</td><td>$200.000</td></tr>
+                      <tr><td>M-101-C</td><td>100 unidades</td><td>190</td><td>80</td><td>$175.000</td></tr>
+                      <tr><td>M-101-C</td><td>250 unidades</td><td>190</td><td>80</td><td>$155.000</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-panel" id="panel-m102" role="tabpanel" aria-labelledby="tab-m102">
+          <div class="product-grid">
+            <div class="product-art">
+              <div class="product-art-top">
+                <span class="product-label"><small>Ficha de producto</small><strong>M102</strong></span>
+                <span class="badge">Presencia arquitectónica</span>
+              </div>
+              <figure class="product-photo-wrap">
+                <img class="product-photo" src="IMAGENS/M1O2.png" alt="Sofá M102" loading="lazy" />
+              </figure>
+              <p style="color: var(--muted); margin: 0;">Brazos anchos, base metálica elevada y tapizado con carácter para una pieza protagonista dentro del living.</p>
+            </div>
+
+            <div class="product-copy">
+              <h3>Sofisticación funcional y líneas arquitectónicas.</h3>
+              <p>El M102 se distingue por su estructura robusta, brazos anchos y presencia visual imponente, manteniendo equilibrio entre diseño contemporáneo y confort diario.</p>
+
+              <div class="spec-grid">
+                <div class="spec"><strong>Brazos</strong><span>Anchos y definidos.</span></div>
+                <div class="spec"><strong>Base</strong><span>Patas metálicas de 25 cm.</span></div>
+                <div class="spec"><strong>Suspensión</strong><span>Resortes zigzag de acero de alta resistencia.</span></div>
+                <div class="spec"><strong>Tapizado</strong><span>Poliéster texturado bicolor.</span></div>
+              </div>
+
+              <h4>Dimensiones disponibles</h4>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Configuración</th><th>Ancho</th><th>Alto total</th><th>Profundidad</th></tr></thead>
+                  <tbody>
+                    <tr><td>M-102-A</td><td>75 cm</td><td>70 cm</td><td>80 cm</td></tr>
+                    <tr><td>M-102-B</td><td>160 cm</td><td>70 cm</td><td>80 cm</td></tr>
+                    <tr><td>M-102-C</td><td>190 cm</td><td>70 cm</td><td>80 cm</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <details>
+                <summary>Ver precios mayoristas de referencia + IVA</summary>
+                <div class="details-body table-wrap">
+                  <table>
+                    <thead><tr><th>Modelo</th><th>Cantidad</th><th>Ancho</th><th>Prof.</th><th>Valor + IVA</th></tr></thead>
+                    <tbody>
+                      <tr><td>M-102-A</td><td>25 unidades</td><td>75</td><td>80</td><td>$145.000</td></tr>
+                      <tr><td>M-102-A</td><td>50 unidades</td><td>75</td><td>80</td><td>$120.000</td></tr>
+                      <tr><td>M-102-A</td><td>100 unidades</td><td>75</td><td>80</td><td>$100.000</td></tr>
+                      <tr><td>M-102-A</td><td>250 unidades</td><td>75</td><td>80</td><td>$80.000</td></tr>
+                      <tr><td>M-102-B</td><td>25 unidades</td><td>160</td><td>80</td><td>$200.000</td></tr>
+                      <tr><td>M-102-B</td><td>50 unidades</td><td>160</td><td>80</td><td>$175.000</td></tr>
+                      <tr><td>M-102-B</td><td>100 unidades</td><td>160</td><td>80</td><td>$150.000</td></tr>
+                      <tr><td>M-102-B</td><td>250 unidades</td><td>160</td><td>80</td><td>$130.000</td></tr>
+                      <tr><td>M-102-C</td><td>25 unidades</td><td>190</td><td>80</td><td>$235.000</td></tr>
+                      <tr><td>M-102-C</td><td>50 unidades</td><td>190</td><td>80</td><td>$200.000</td></tr>
+                      <tr><td>M-102-C</td><td>100 unidades</td><td>190</td><td>80</td><td>$175.000</td></tr>
+                      <tr><td>M-102-C</td><td>250 unidades</td><td>190</td><td>80</td><td>$155.000</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-panel" id="panel-m103" role="tabpanel" aria-labelledby="tab-m103">
+          <div class="product-grid">
+            <div class="product-art">
+              <div class="product-art-top">
+                <span class="product-label"><small>Ficha de producto</small><strong>M103</strong></span>
+                <span class="badge">Confort acogedor</span>
+              </div>
+              <figure class="product-photo-wrap">
+                <img class="product-photo" src="IMAGENS/M1O3.png" alt="Sofá M103" loading="lazy" />
+              </figure>
+              <p style="color: var(--muted); margin: 0;">Diseño amplio, líneas suaves, base baja en madera y tapizado claro para espacios residenciales y ambientes de descanso.</p>
+            </div>
+
+            <div class="product-copy">
+              <h3>Confort amplio y diseño acogedor.</h3>
+              <p>El M103 ofrece proporciones equilibradas, brazos rectos y generosos, cojines amplios y una estética cálida para proyectos que buscan comodidad sin perder elegancia visual.</p>
+
+              <div class="spec-grid">
+                <div class="spec"><strong>Brazos</strong><span>Rectos, amplios y de líneas limpias.</span></div>
+                <div class="spec"><strong>Base</strong><span>Patas cortas de madera.</span></div>
+                <div class="spec"><strong>Suspensión</strong><span>Resortes zigzag de acero de alta resistencia.</span></div>
+                <div class="spec"><strong>Tapizado</strong><span>Texturizado claro, versátil y sofisticado.</span></div>
+              </div>
+
+              <h4>Dimensiones disponibles</h4>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Configuración</th><th>Ancho</th><th>Alto total</th><th>Profundidad</th></tr></thead>
+                  <tbody>
+                    <tr><td>1 cuerpo</td><td>80 cm</td><td>75 cm</td><td>90 cm</td></tr>
+                    <tr><td>2 cuerpos</td><td>160 cm</td><td>75 cm</td><td>90 cm</td></tr>
+                    <tr><td>3 cuerpos</td><td>190 cm</td><td>75 cm</td><td>90 cm</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <details>
+                <summary>Condiciones comerciales</summary>
+                <div class="details-body">
+                  <p style="color: var(--muted); margin-bottom: 0;">El catálogo no informa tabla de precios para el M103. Para este modelo, el sitio dirige al usuario a solicitar cotización según configuración, cantidad, disponibilidad y condiciones vigentes.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="calidad">
+      <div class="container">
+        <div class="quality-band reveal">
+          <div>
+            <p class="section-kicker">Estándares de producto</p>
+            <h2>Materiales funcionales y terminaciones pensadas para uso diario.</h2>
+            <p>Cada modelo fue seleccionado para ofrecer una combinación equilibrada de diseño, comodidad, resistencia y valor comercial.</p>
+          </div>
+
+          <div class="quality-list">
+            <div class="quality-item">
+              <span class="check">✓</span>
+              <div><strong>Estructura reforzada</strong><span>Diseñada para estabilidad, soporte y durabilidad en el uso cotidiano.</span></div>
+            </div>
+            <div class="quality-item">
+              <span class="check">✓</span>
+              <div><strong>Espuma de alta densidad</strong><span>Confort firme, buen soporte y recuperación de forma.</span></div>
+            </div>
+            <div class="quality-item">
+              <span class="check">✓</span>
+              <div><strong>Resortes zigzag de acero</strong><span>Base firme, flexible y adecuada para uso continuo.</span></div>
+            </div>
+            <div class="quality-item">
+              <span class="check">✓</span>
+              <div><strong>Tapizados texturados</strong><span>Superficies resistentes, versátiles y fáciles de integrar en distintos estilos.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso">
+      <div class="container">
+        <div class="section-head center">
+          <p class="section-kicker">Cómo trabajamos</p>
+          <h2>Un proceso claro para cotizaciones mayoristas y proyectos.</h2>
+          <p>Un sitio institucional debe transformar interés en contacto comercial. Por eso el recorrido está diseñado para guiar al visitante desde la propuesta hasta la solicitud concreta.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <b>01</b>
+            <h3>Diagnóstico</h3>
+            <p>Entendemos el tipo de negocio, segmento, espacio y volumen estimado.</p>
+          </article>
+          <article class="process-card reveal">
+            <b>02</b>
+            <h3>Selección</h3>
+            <p>Recomendamos los modelos y configuraciones más adecuados.</p>
+          </article>
+          <article class="process-card reveal">
+            <b>03</b>
+            <h3>Cotización</h3>
+            <p>Enviamos valores, cantidades mínimas y condiciones comerciales.</p>
+          </article>
+          <article class="process-card reveal">
+            <b>04</b>
+            <h3>Producción</h3>
+            <p>Coordinamos tiempos, terminaciones y disponibilidad según pedido.</p>
+          </article>
+          <article class="process-card reveal">
+            <b>05</b>
+            <h3>Entrega</h3>
+            <p>Acompañamos el cierre para que el producto llegue con claridad operativa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head center">
+          <p class="section-kicker">Preguntas frecuentes</p>
+          <h2>Información clave antes de cotizar.</h2>
+          <p>Respuestas rápidas para los usuarios que llegan con intención comercial, pero aún necesitan seguridad antes de escribir.</p>
+        </div>
+
+        <div class="faq-grid">
+          <details class="reveal">
+            <summary>¿La colección es para venta minorista o mayorista?</summary>
+            <div class="details-body">La propuesta está pensada principalmente para mayoristas, tiendas, proyectos de interiorismo y distribuidores.</div>
+          </details>
+          <details class="reveal">
+            <summary>¿Los valores incluyen IVA?</summary>
+            <div class="details-body">Las tablas de referencia indican valores + IVA. Las condiciones finales deben confirmarse directamente con el equipo comercial.</div>
+          </details>
+          <details class="reveal">
+            <summary>¿Qué modelos tienen precio publicado?</summary>
+            <div class="details-body">El catálogo incluye precios de referencia para M101 y M102. El M103 se presenta con medidas y especificaciones, pero requiere cotización.</div>
+          </details>
+          <details class="reveal">
+            <summary>¿Se puede pedir asesoría para escoger modelo?</summary>
+            <div class="details-body">Sí. El sitio está preparado para recibir solicitudes con modelo, cantidad y tipo de proyecto, facilitando una recomendación más precisa.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container">
+        <div class="contact-card reveal">
+          <aside class="contact-aside">
+            <p class="section-kicker">Contacto comercial</p>
+            <h2>Solicita disponibilidad, cantidades mínimas y valores actualizados.</h2>
+            <p>Cuéntanos qué modelo te interesa, el volumen estimado y el tipo de negocio o proyecto. Nuestro equipo podrá orientarte con la mejor configuración.</p>
+
+            <div class="contact-lines">
+              <div class="contact-line">
+                <strong>Ubicación</strong>
+                <span>Vitacura 5630, Santiago de Chile</span>
+              </div>
+              <div class="contact-line">
+                <strong>Enfoque</strong>
+                <span>Mayoristas · Tiendas · Interiorismo · Distribuidores</span>
+              </div>
+              <div class="contact-line">
+                <strong>WhatsApp</strong>
+                <span>+56 9 4058 9632</span>
+              </div>
+            </div>
+          </aside>
+
+          <form class="contact-form" id="quoteForm">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" autocomplete="name" required placeholder="Tu nombre" />
+            </div>
+            <div class="field">
+              <label for="company">Empresa</label>
+              <input id="company" name="company" autocomplete="organization" placeholder="Nombre de la empresa" />
+            </div>
+            <div class="field">
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="correo@empresa.cl" />
+            </div>
+            <div class="field">
+              <label for="phone">Teléfono / WhatsApp</label>
+              <input id="phone" name="phone" autocomplete="tel" placeholder="+56 9..." />
+            </div>
+            <div class="field">
+              <label for="model">Modelo de interés</label>
+              <select id="model" name="model">
+                <option>M101</option>
+                <option>M102</option>
+                <option>M103</option>
+                <option>Más de un modelo</option>
+                <option>Aún no lo sé</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="qty">Cantidad estimada</label>
+              <select id="qty" name="qty">
+                <option>Menos de 25 unidades</option>
+                <option>25 unidades</option>
+                <option>50 unidades</option>
+                <option>100 unidades</option>
+                <option>250 unidades o más</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Cuéntanos sobre el proyecto, fechas, modelos y condiciones que necesitas."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
+            <a class="btn btn-secondary" id="whatsappLink" href="#" rel="noopener">Escribir por WhatsApp</a>
+            <p class="form-note">El formulario abre WhatsApp con el mensaje comercial ya preparado.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="brand">
+        <span class="brand-mark">A</span>
+        <span>Athemporal <span>Sofa Collection</span></span>
+      </div>
+      <div class="footer-links">
+        <a href="#identidad">Identidad</a>
+        <a href="#coleccion">Colección</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <small>© <span id="year"></span> Athemporal Sofa Collection. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script>
+    // WhatsApp comercial en formato internacional, sin + ni espacios.
+    const WHATSAPP_NUMBER = "56940589632"
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn?.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks?.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuBtn?.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    const tabs = document.querySelectorAll(".tab");
+    const panels = document.querySelectorAll(".product-panel");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.dataset.tab;
+        tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
+        panels.forEach((panel) => panel.classList.toggle("active", panel.id === `panel-${target}`));
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const whatsappLink = document.getElementById("whatsappLink");
+    const defaultWhatsMessage = encodeURIComponent("Hola, quiero solicitar una cotización de Athemporal Sofa Collection.");
+    if (WHATSAPP_NUMBER) {
+      whatsappLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${defaultWhatsMessage}`;
+      whatsappLink.target = "_blank";
+    } else {
+      whatsappLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        alert("Configura WHATSAPP_NUMBER en el archivo index.html antes de publicar.");
+      });
+    }
+
+    document.getElementById("quoteForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const form = new FormData(event.currentTarget);
+      const data = Object.fromEntries(form.entries());
+      const message = encodeURIComponent(
+        `Hola, quiero solicitar una cotización de Athemporal Sofa Collection.
+
+` +
+        `Nombre: ${data.name || ""}
+` +
+        `Empresa: ${data.company || ""}
+` +
+        `Correo: ${data.email || ""}
+` +
+        `Teléfono/WhatsApp: ${data.phone || ""}
+` +
+        `Modelo de interés: ${data.model || ""}
+` +
+        `Cantidad estimada: ${data.qty || ""}
+
+` +
+        `Mensaje:
+${data.message || ""}`
+      );
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+    });
+
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "FurnitureStore",
+      "name": "Athemporal Sofa Collection",
+      "description": "Sofás de diseño contemporáneo para mayoristas, tiendas, distribuidores y proyectos de interiorismo en Chile.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Vitacura 5630",
+        "addressLocality": "Santiago",
+        "addressCountry": "CL"
+      },
+      "areaServed": "Chile",
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Sofá M101" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Sofá M102" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Sofá M103" } }
+      ]
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+  </script>
+</body>
+</html>
